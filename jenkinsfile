@@ -1,0 +1,27 @@
+pipeline{
+    :
+    agent any
+    stages{
+        stage('conmpile') {
+            steps {
+                script {
+                    echo 'test.java ...'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                script {
+                    echo 'Testing...'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    echo 'Deploying...'
+                }
+            }
+        }
+    } 
+}
